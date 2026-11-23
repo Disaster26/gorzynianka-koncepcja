@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%224%22 fill=%22%231E3A2F%22/%3E%3Cpath d=%22M3 23l6-6 4 3 6-9 4 5 3-2 3 3v9H3z%22 fill=%22%23C19B76%22/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Apartamenty w Karkonoszach - Górzynianka, Piechowice-Górzyniec</title>
+<meta name="description" content="Dwa niezależne apartamenty dla 2-7 osób na Górzyńcu w Piechowicach, 5 km od Szklarskiej Poręby. Taras z widokiem na Karkonosze, bezpłatny parking, bez opłat rezerwacyjnych.">
+<meta name="theme-color" content="#1E3A2F">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/dom-1600.webp" imagesrcset="img/dom-640.webp 640w, img/dom-1024.webp 1024w, img/dom-1600.webp 1600w, img/dom-2000.webp 2000w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Lora";font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost";font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Jost";font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{
+  --braz:#C19B76;      /* akcent z obecnej strony (przycisk Zarezerwuj) */
+  --braz-t:#8A623C;    /* ten sam brąz przyciemniony do tekstu na bieli */
+  --swierk:#1E3A2F;    /* zieleń świerków, mocna sekcja */
+  --swierk-2:#152A22;
+  --szary:#EEF1F0;
+  --tekst:#1D211F;
+  --tekst-2:#4B524E;
+  --linia:#D9DEDB;
+  --nag:72px;
+  --w:min(92vw,1760px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 17px/1.6 "Jost",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Lora",Georgia,serif;font-weight:500;line-height:1.15;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(30px,3.2vw,50px)}
+h3{font-size:clamp(23px,1.8vw,30px)}
+p{margin:0 0 1em}
+.wrap{width:var(--w);margin:0 auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 28px;border:0;border-radius:3px;background:var(--braz);color:#1D1A16;font:600 17px/1 "Jost",sans-serif;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn:hover{background:#D1AE8B}
+.btn-ciemny{background:var(--swierk);color:#fff}
+.btn-ciemny:hover{background:#2A4D3F}
+.btn-obrys{background:transparent;color:var(--swierk);box-shadow:inset 0 0 0 1.5px var(--swierk)}
+.btn-obrys:hover{background:var(--swierk);color:#fff}
+
+/* nagłówek */
+.nag{position:sticky;top:0;z-index:50;height:var(--nag);background:#fff;border-bottom:1px solid var(--linia)}
+.nag .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:block;flex:none}
+.logo img{width:auto;height:34px}
+.menu{display:flex;gap:clamp(18px,2.2vw,40px);margin-left:auto}
+.menu a{text-decoration:none;font-size:16px;font-weight:500;color:var(--tekst-2);padding:6px 0;border-bottom:1.5px solid transparent}
+.menu a:hover,.menu a[aria-current]{color:var(--tekst);border-color:var(--braz)}
+.nag-tel{display:flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;white-space:nowrap}
+.nag-tel svg{width:18px;height:18px;color:var(--braz-t)}
+.nag .btn{min-height:44px;padding:0 20px;font-size:16px}
+.burger{display:none}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:calc(100svh - var(--nag));background:var(--swierk);color:#fff;display:flex;align-items:center;overflow:hidden}
+.hero-foto{position:absolute;inset:0}
+.hero-foto img{position:absolute;right:0;top:0;height:100%;width:min(100%,2100px);object-fit:cover;object-position:58% 62%}
+.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,36,28,.9) 0%,rgba(18,36,28,.7) 34%,rgba(18,36,28,.18) 62%,rgba(18,36,28,0) 80%),linear-gradient(0deg,rgba(18,36,28,.45) 0,rgba(18,36,28,0) 30%)}
+.hero-tresc{position:relative;z-index:1;width:100%;padding:56px 0 88px}
+.hero-tresc .in{max-width:min(760px,48vw)}
+.hero h1{font-size:clamp(38px,3.7vw,64px);font-weight:500;text-shadow:0 2px 24px rgba(10,20,15,.35)}
+.hero .lead{font-size:clamp(18px,1.35vw,22px);line-height:1.5;margin:22px 0 32px;color:#E9EEEB;max-width:560px}
+.hero .ocena{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:16px;color:#DCE4DF}
+.hero .ocena b{color:#fff;font-weight:600}
+.gwiazdy{color:var(--braz);letter-spacing:2px}
+.hero-grzbiet{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(28px,3.4vw,58px);z-index:1;color:#fff;pointer-events:none}
+@media (min-width:2101px){.hero-foto img{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 26%);mask-image:linear-gradient(90deg,transparent 0,#000 26%)}}
+
+/* separator: linia grzbietu Karkonoszy */
+.grzbiet{display:block;width:100%;height:auto;color:var(--braz)}
+.grzbiet path{fill:none;stroke:currentColor;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.sep{width:var(--w);margin:0 auto}
+
+section{scroll-margin-top:var(--nag)}
+.sekcja{padding:clamp(64px,8vw,120px) 0}
+.szara{background:var(--szary)}
+.glowa{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(32px,4vw,56px)}
+.glowa p{max-width:620px;margin:0;color:var(--tekst-2);font-size:18px}
+
+/* o obiekcie */
+.o{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,96px);align-items:center}
+.o-tekst p{color:var(--tekst-2);font-size:18px;max-width:640px}
+.o-tekst h2{margin-bottom:26px}
+.o-tekst .podpis{font-family:"Lora",serif;font-size:20px;color:var(--tekst);margin-top:28px}
+.o-foto{display:grid;grid-template-columns:1.3fr 1fr;gap:12px}
+.o-foto button{all:unset;cursor:zoom-in;display:block;overflow:hidden;border-radius:3px}
+.o-foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .5s}
+.o-foto button:hover img{transform:scale(1.03)}
+.o-foto .duze{grid-row:span 2}
+.o-foto .duze img{aspect-ratio:auto;height:100%}
+
+/* apartamenty */
+.apart{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.4vw,40px)}
+.karta{background:#fff;border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.galeria{position:relative}
+.tor{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.tor>button{all:unset;flex:0 0 100%;scroll-snap-align:start;cursor:zoom-in}
+.tor img{width:100%;aspect-ratio:3/2;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.strz{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--tekst);display:grid;place-items:center;cursor:pointer;opacity:0;transition:opacity .2s}
+.strz svg{width:16px;height:16px}
+.strz.l{left:14px}.strz.p{right:14px}
+.galeria:hover .strz,.strz:focus-visible{opacity:1}
+.licznik{position:absolute;right:14px;bottom:14px;background:rgba(21,42,34,.82);color:#fff;font-size:14px;padding:4px 10px;border-radius:20px}
+.nr{position:absolute;left:18px;top:14px;font-family:"Lora",serif;font-size:44px;line-height:1;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.45);pointer-events:none}
+.karta-tresc{padding:clamp(24px,2.4vw,40px);display:flex;flex-direction:column;flex:1}
+.karta-tresc .grzbiet{width:120px;margin-bottom:18px}
+.karta h3{margin-bottom:12px}
+.karta p{color:var(--tekst-2)}
+.fakty{list-style:none;padding:0;margin:4px 0 26px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:16px}
+.fakty li{position:relative;padding-left:16px}
+.fakty li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--braz);transform:rotate(45deg)}
+.karta-dol{margin-top:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:22px;border-top:1px solid var(--linia)}
+.cena{font-size:16px;color:var(--tekst-2)}
+.cena b{font-family:"Lora",serif;font-size:30px;font-weight:500;color:var(--tekst)}
+
+/* cennik */
+.cennik{width:100%;border-collapse:collapse;font-size:17px}
+.cennik th,.cennik td{text-align:left;padding:18px 16px;border-bottom:1px solid var(--linia);vertical-align:top}
+.cennik thead th{font-weight:600;font-size:15px;color:var(--tekst-2);border-bottom:2px solid var(--tekst)}
+.cennik td b{font-family:"Lora",serif;font-size:24px;font-weight:500}
+.cennik .ap{font-family:"Lora",serif;font-size:22px}
+.cennik small{display:block;color:var(--tekst-2);font-size:15px}
+.cennik-uwagi{display:flex;flex-wrap:wrap;gap:10px 36px;margin-top:26px;color:var(--tekst-2);font-size:16px}
+
+/* na miejscu - ciemna sekcja */
+.ciemna{background:var(--swierk);color:#fff;position:relative}
+.ciemna .grzbiet{color:var(--braz)}
+.ciemna h2{color:#fff}
+.ciemna .glowa p{color:#C9D6CF}
+.krawedz{display:block;width:100%;height:clamp(28px,4vw,60px);color:var(--swierk);margin-bottom:-1px}
+.udog{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.udog div{padding:26px 26px 26px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.udog b{display:block;font-family:"Lora",serif;font-weight:500;font-size:22px;margin-bottom:6px}
+.udog span{color:#C9D6CF;font-size:16px}
+.panorama{margin-top:clamp(40px,5vw,72px);position:relative;max-width:2125px;border-radius:3px;overflow:hidden}
+.panorama img{width:100%;aspect-ratio:2119/490;object-fit:cover}
+.panorama p{position:absolute;left:24px;bottom:18px;margin:0;font-family:"Lora",serif;font-size:clamp(18px,1.6vw,26px);text-shadow:0 2px 12px rgba(0,0,0,.6)}
+
+/* opinie */
+.opinie{display:flex;gap:clamp(16px,2vw,28px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.opinie::-webkit-scrollbar{display:none}
+.opinia{margin:0;flex:0 0 calc((100% - 2*clamp(16px,2vw,28px))/3);scroll-snap-align:start;background:var(--szary);padding:32px;border-radius:4px;display:flex;flex-direction:column}
+.opinia blockquote{margin:0 0 20px;font-family:"Lora",serif;font-size:19px;line-height:1.5}
+.opinia cite{margin-top:auto;font-style:normal;font-weight:600;font-size:16px}
+.opinia cite span{display:block;font-weight:400;color:var(--tekst-2);font-size:14px}
+.tor-nav{display:flex;gap:10px}
+.strz-t{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--tekst);background:#fff;display:grid;place-items:center;cursor:pointer}
+.strz-t:disabled{opacity:.3;cursor:default}
+.strz-t svg{width:16px;height:16px}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(32px,5vw,96px)}
+.dane p{font-size:18px;color:var(--tekst-2)}
+.dane a.duzy{display:block;font-family:"Lora",serif;font-size:clamp(26px,2.4vw,36px);text-decoration:none;color:var(--tekst);margin:4px 0}
+.dane .mail{font-size:20px;text-decoration:none;color:var(--braz-t);font-weight:500}
+.mapa{margin-top:32px;aspect-ratio:16/10;background:#DCE2DF;border-radius:4px;overflow:hidden;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa span{position:absolute;inset:0;display:grid;place-items:center;color:var(--tekst-2);font-size:15px}
+form{background:#fff;padding:clamp(24px,3vw,48px);border-radius:4px}
+form h3{margin-bottom:8px}
+form>p{color:var(--tekst-2);font-size:16px}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 18px;margin-top:22px}
+.pole{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pole.cale{grid-column:1/-1}
+label{font-size:15px;font-weight:500}
+input,select,textarea{width:100%;min-width:0;font:inherit;font-size:16px;padding:13px 14px;border:1px solid #C5CCC8;border-radius:3px;background:#fff;color:var(--tekst)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--braz);outline-offset:1px;border-color:var(--braz)}
+textarea{min-height:110px;resize:vertical}
+form .btn{margin-top:22px;width:100%}
+.info-form{margin:14px 0 0;font-size:15px;color:#9B2F2F}
+.info-form.ok{color:var(--swierk)}
+
+/* stopka */
+.stopka{background:var(--swierk-2);color:#C3CFC8;padding:0 0 28px;font-size:16px}
+.stopka .krawedz{color:var(--swierk-2);background:var(--szary)}
+.stopka-gora{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;padding:40px 0 36px}
+.stopka img{height:32px;width:auto;margin-bottom:14px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka h4{margin:0 0 10px;color:#fff;font:600 15px/1.3 "Jost",sans-serif}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.stopka-dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;border-top:1px solid rgba(255,255,255,.14);font-size:15px}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* dolny pasek na telefonie */
+.pasek{display:none}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,18,14,.94);display:none;align-items:center;justify-content:center}
+.lb.otw{display:flex}
+.lb img{max-width:min(94vw,1000px);max-height:84vh;width:auto;height:auto;border-radius:2px}
+.lb button{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb button svg{width:18px;height:18px}
+.lb .x{top:16px;right:16px}.lb .pl{left:16px;top:50%;transform:translateY(-50%)}.lb .pp{right:16px;top:50%;transform:translateY(-50%)}
+.lb .lbl{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#D6DED9;font-size:15px}
+
+/* cookies */
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:560px;background:#fff;color:var(--tekst);border-radius:4px;box-shadow:0 8px 30px rgba(0,0,0,.18);padding:16px 18px;font-size:15px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.cookies[hidden]{display:none}
+.cookies p{margin:0;flex:1 1 260px}
+.cookies button{font:600 15px "Jost",sans-serif;padding:10px 16px;border-radius:3px;border:1.5px solid var(--swierk);background:var(--swierk);color:#fff;cursor:pointer}
+.cookies button.drugi{background:#fff;color:var(--swierk)}
+
+@media (min-width:1900px){.udog{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:1180px){
+  .nag-tel span{display:none}
+  .udog{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .opinia{flex-basis:calc((100% - clamp(16px,2vw,28px))/2)}
+}
+@media (max-width:980px){
+  :root{--nag:62px}
+  .menu{position:fixed;top:var(--nag);left:0;right:0;flex-direction:column;gap:0;background:#fff;padding:8px 4vw 20px;border-bottom:1px solid var(--linia);transform:translateY(-120%);visibility:hidden;transition:transform .25s,visibility .25s;margin:0;z-index:-1}
+  .menu.otw{transform:none;visibility:visible}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--linia);font-size:18px}
+  .nag .btn{display:none}
+  .nag-tel{margin-left:auto}
+  .burger{display:grid;place-items:center;width:44px;height:44px;border:0;background:none;cursor:pointer;color:var(--tekst)}
+  .burger svg{width:26px;height:26px}
+  .logo img{height:27px}
+  .o,.kontakt{grid-template-columns:1fr}
+  .hero-tresc .in{max-width:620px}
+  .apart{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  body{font-size:16.5px}
+  .hero{flex-direction:column;align-items:stretch}
+  .hero-foto{position:relative;inset:auto;flex:1 1 auto;min-height:min(46vw,34svh);max-height:108vw}
+  .hero-foto img{width:100%;object-position:50% 58%}
+  .hero-foto::after{background:linear-gradient(0deg,rgba(30,58,47,1) 0,rgba(30,58,47,0) 26%)}
+  .hero-grzbiet{display:none}
+  .hero-tresc .in{max-width:none}
+  .hero-tresc{padding:4px 0 clamp(22px,4svh,36px)}
+  .hero h1{font-size:clamp(28px,7.6vw,36px)}
+  .hero .lead{font-size:16.5px;margin:12px 0 22px}
+  .hero .btn{width:100%}
+  .hero .ocena{margin-top:14px;font-size:15px;justify-content:center}
+  .o-foto{grid-template-columns:1fr 1fr;gap:8px}
+  .o-foto .duze{grid-row:auto;grid-column:1/-1}
+  .o-foto .duze img{aspect-ratio:4/3}
+  .strz{display:none}
+  .nr{font-size:36px}
+  .cennik thead{display:none}
+  .cennik,.cennik tbody,.cennik tr,.cennik td{display:block;width:100%}
+  .cennik tr{padding:16px 0;border-bottom:1px solid var(--linia);display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
+  .cennik td.ap,.cennik td:last-child{grid-column:1/-1}
+  .cennik td:last-child{font-size:15px;color:var(--tekst-2)}
+  .cennik td:last-child small{display:inline}
+  .cennik td:last-child small::before{content:", "}
+  .cennik td small{display:none}
+  .cennik td{border:0;padding:4px 0}
+  .cennik td[data-k]::before{content:attr(data-k);display:block;font-size:14px;color:var(--tekst-2)}
+  .cennik td:last-child::before{display:inline!important;content:"Kolejna osoba: "!important;font-size:15px}
+  .udog{grid-template-columns:1fr 1fr}
+  .udog div{padding:18px 14px 18px 0}
+  .udog b{font-size:19px}
+  .panorama img{aspect-ratio:16/9}
+  .opinia{flex-basis:86%;padding:24px}
+  .opinia blockquote{font-size:17px}
+  .cookies{bottom:76px;left:10px;right:10px;padding:12px 14px}
+  .pola{grid-template-columns:1fr 1fr}
+  .pole.pol{grid-column:1/-1}
+  .stopka-gora{grid-template-columns:1fr 1fr}
+  .stopka-gora>div:first-child{grid-column:1/-1}
+  .pasek{position:fixed;left:0;right:0;bottom:0;z-index:55;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--linia);transform:translateY(110%);transition:transform .25s}
+  .pasek.widac{transform:none}
+  .pasek a{min-height:48px;padding:0 12px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nag">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Górzynianka - strona główna"><img src="img/logo.png" width="555" height="90" alt="Górzynianka"></a>
+    <nav class="menu" id="menu" aria-label="Menu">
+      <a href="#o-nas">O Górzyniance</a>
+      <a href="#apartamenty">Apartamenty</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#na-miejscu">Na miejscu</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nag-tel" href="tel:+48669622871" aria-label="Zadzwoń: 669 622 871"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.2 2.5 7.6 2l1.5 3.7-1.8 1.4a10 10 0 0 0 5.6 5.6l1.4-1.8 3.7 1.5-.5 2.4c-.2.8-.9 1.3-1.7 1.3C9.4 16.1 3.9 10.6 3.9 4.2c0-.8.5-1.5 1.3-1.7Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>669 622 871</span></a>
+    <a class="btn" href="#kontakt">Zapytaj o termin</a>
+    <button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 26 26" aria-hidden="true"><path d="M3 8h20M3 13h20M3 18h20" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </div>
+</header>
+
+<main id="start">
+<section class="hero" aria-label="Apartamenty Górzynianka">
+  <div class="hero-foto">
+    <img src="img/dom-1600.webp" srcset="img/dom-640.webp 640w, img/dom-1024.webp 1024w, img/dom-1600.webp 1600w, img/dom-2000.webp 2000w" sizes="(max-width:760px) 100vw, min(100vw, 2100px)" width="2000" height="1500" alt="Dom Górzynianka z dwoma apartamentami i podjazdem z kostki, w tle zalesione wzgórza" fetchpriority="high">
+  </div>
+  <div class="hero-tresc">
+    <div class="wrap"><div class="in">
+      <h1>Apartamenty w Karkonoszach, 5 km od Szklarskiej Poręby</h1>
+      <p class="lead">Górzynianka to dwa niezależne apartamenty dla 2-7 osób na cichym Górzyńcu w Piechowicach. Karkonosze na wyciągnięcie ręki i w zasięgu wzroku.</p>
+      <a class="btn" id="hero-cta" href="#kontakt">Zapytaj o wolny termin</a>
+      <p class="ocena"><span class="gwiazdy" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><b>4,9</b> w Google, 59 opinii gości</span></p>
+    </div></div>
+  </div>
+  <svg class="hero-grzbiet" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52 60 47 120 42 170 31 210 35 262 22 300 27 352 18 404 25 462 20 520 29 582 24 642 31 702 26 760 14 800 5 832 12 884 21 942 27 1002 22 1062 31 1122 37 1200 41V60H0Z" fill="#fff"/></svg>
+</section>
+
+<section class="sekcja" id="o-nas">
+  <div class="wrap o">
+    <div class="o-tekst">
+      <h2>Spokojny dom na Górzyńcu, otoczony lasem</h2>
+      <p>Górzynianka stoi na Górzyńcu, w spokojnej dzielnicy Piechowic, 5 km od centrum Szklarskiej Poręby. Dookoła są lasy, więc po dniu na szlaku wraca się do ciszy i kameralnej atmosfery.</p>
+      <p>Dom powstał w 2018 roku. Są w nim dwa apartamenty z osobnymi wejściami i własnymi tarasami: większy dla rodziny albo grupy znajomych, mniejszy dla pary lub rodziny z dzieckiem. Blisko stąd na stoki narciarskie, szlaki piesze i rowerowe, do muzeów i parków krajobrazowych.</p>
+      <p>Rezerwacja odbywa się bezpośrednio u gospodarzy, telefonicznie albo mailowo, bez opłat rezerwacyjnych.</p>
+      <p class="podpis">Halina i Roman, gospodarze Górzynianki</p>
+    </div>
+    <div class="o-foto">
+      <button class="duze" type="button" data-lb="img/dom3-1000.webp" aria-label="Powiększ: taras przed apartamentem"><img src="img/dom3-1000.webp" width="1000" height="750" loading="lazy" alt="Zadaszony taras z krzesłami i stolikiem przed apartamentem"></button>
+      <button type="button" data-lb="img/dom2-1000.webp" aria-label="Powiększ: dom od strony ogrodu"><img src="img/dom2-600.webp" width="600" height="450" loading="lazy" alt="Dom Górzynianka od strony ogrodu"></button>
+      <button type="button" data-lb="img/dom4-1000.webp" aria-label="Powiększ: widok na wzgórza"><img src="img/dom4-600.webp" width="600" height="450" loading="lazy" alt="Widok z posesji na zalesione wzgórza"></button>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="apartamenty">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Dwa apartamenty, każdy z osobnym wejściem</h2>
+      <p>W pełni wyposażone, z aneksem kuchennym i tarasem z widokiem na góry. Zdjęcia można przesuwać palcem albo myszą.</p>
+    </div>
+    <div class="apart">
+      <article class="karta">
+        <div class="galeria" data-galeria data-nazwa="apartamentu #1"><div class="tor" data-ciagnij><button type="button" data-lb="img/apartament-1-1-1000.webp" aria-label="Powiększ zdjęcie: salon z jadalnią"><img src="img/apartament-1-1-600.webp" srcset="img/apartament-1-1-600.webp 600w, img/apartament-1-1-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: salon z jadalnią"></button><button type="button" data-lb="img/apartament-1-4-1000.webp" aria-label="Powiększ zdjęcie: jadalnia i aneks kuchenny"><img src="img/apartament-1-4-600.webp" srcset="img/apartament-1-4-600.webp 600w, img/apartament-1-4-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: jadalnia i aneks kuchenny"></button><button type="button" data-lb="img/apartament-1-3-1000.webp" aria-label="Powiększ zdjęcie: aneks kuchenny"><img src="img/apartament-1-3-600.webp" srcset="img/apartament-1-3-600.webp 600w, img/apartament-1-3-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: aneks kuchenny"></button><button type="button" data-lb="img/apartament-1-2-1000.webp" aria-label="Powiększ zdjęcie: kuchnia"><img src="img/apartament-1-2-600.webp" srcset="img/apartament-1-2-600.webp 600w, img/apartament-1-2-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: kuchnia"></button><button type="button" data-lb="img/apartament-1-10-1000.webp" aria-label="Powiększ zdjęcie: sypialnia z łóżkiem dwuosobowym"><img src="img/apartament-1-10-600.webp" srcset="img/apartament-1-10-600.webp 600w, img/apartament-1-10-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: sypialnia z łóżkiem dwuosobowym"></button><button type="button" data-lb="img/apartament-1-6-1000.webp" aria-label="Powiększ zdjęcie: sypialnia z dwoma łóżkami"><img src="img/apartament-1-6-600.webp" srcset="img/apartament-1-6-600.webp 600w, img/apartament-1-6-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: sypialnia z dwoma łóżkami"></button><button type="button" data-lb="img/apartament-1-7-1000.webp" aria-label="Powiększ zdjęcie: sypialnia z dwoma łóżkami"><img src="img/apartament-1-7-600.webp" srcset="img/apartament-1-7-600.webp 600w, img/apartament-1-7-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: sypialnia z dwoma łóżkami"></button><button type="button" data-lb="img/apartament-1-8-1000.webp" aria-label="Powiększ zdjęcie: sypialnia"><img src="img/apartament-1-8-600.webp" srcset="img/apartament-1-8-600.webp 600w, img/apartament-1-8-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: sypialnia"></button><button type="button" data-lb="img/apartament-1-13-1000.webp" aria-label="Powiększ zdjęcie: stół w salonie"><img src="img/apartament-1-13-600.webp" srcset="img/apartament-1-13-600.webp 600w, img/apartament-1-13-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: stół w salonie"></button><button type="button" data-lb="img/apartament-1-15-1000.webp" aria-label="Powiększ zdjęcie: sofa w salonie"><img src="img/apartament-1-15-600.webp" srcset="img/apartament-1-15-600.webp 600w, img/apartament-1-15-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #1: sofa w salonie"></button></div><span class="nr" aria-hidden="true">#1</span></div>
+        <div class="karta-tresc">
+          <svg class="grzbiet" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52 60 47 120 42 170 31 210 35 262 22 300 27 352 18 404 25 462 20 520 29 582 24 642 31 702 26 760 14 800 5 832 12 884 21 942 27 1002 22 1062 31 1122 37 1200 41"/></svg>
+          <h3>Apartament #1 dla 5-7 osób</h3>
+          <p>Dobry wybór dla dużej rodziny albo grupy znajomych. Dwie osobne sypialnie, każda z własną łazienką, osobne WC na korytarzu i salon z aneksem kuchennym. Osobne wejście i słoneczny taras z widokiem na Karkonosze.</p>
+          <ul class="fakty"><li>2 sypialnie</li><li>2 łazienki + WC</li><li>salon z aneksem</li><li>do 7 osób</li><li>taras</li></ul>
+          <div class="karta-dol"><span class="cena">od <b>300 zł</b> za dobę</span><a class="btn btn-ciemny" href="#kontakt" data-ap="1">Zapytaj o termin</a></div>
+        </div>
+      </article>
+      <article class="karta">
+        <div class="galeria" data-galeria data-nazwa="apartamentu #2"><div class="tor" data-ciagnij><button type="button" data-lb="img/apartament-2-2-1000.webp" aria-label="Powiększ zdjęcie: salon z wyjściem na taras"><img src="img/apartament-2-2-600.webp" srcset="img/apartament-2-2-600.webp 600w, img/apartament-2-2-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: salon z wyjściem na taras"></button><button type="button" data-lb="img/apartament-2-1-1000.webp" aria-label="Powiększ zdjęcie: salon"><img src="img/apartament-2-1-600.webp" srcset="img/apartament-2-1-600.webp 600w, img/apartament-2-1-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: salon"></button><button type="button" data-lb="img/apartament-2-5-1000.webp" aria-label="Powiększ zdjęcie: salon"><img src="img/apartament-2-5-600.webp" srcset="img/apartament-2-5-600.webp 600w, img/apartament-2-5-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: salon"></button><button type="button" data-lb="img/apartament-2-3-1000.webp" aria-label="Powiększ zdjęcie: aneks kuchenny"><img src="img/apartament-2-3-600.webp" srcset="img/apartament-2-3-600.webp 600w, img/apartament-2-3-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: aneks kuchenny"></button><button type="button" data-lb="img/apartament-2-4-1000.webp" aria-label="Powiększ zdjęcie: aneks kuchenny"><img src="img/apartament-2-4-600.webp" srcset="img/apartament-2-4-600.webp 600w, img/apartament-2-4-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: aneks kuchenny"></button><button type="button" data-lb="img/apartament-2-6-1000.webp" aria-label="Powiększ zdjęcie: sypialnia"><img src="img/apartament-2-6-600.webp" srcset="img/apartament-2-6-600.webp 600w, img/apartament-2-6-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: sypialnia"></button><button type="button" data-lb="img/apartament-2-7-1000.webp" aria-label="Powiększ zdjęcie: sypialnia"><img src="img/apartament-2-7-600.webp" srcset="img/apartament-2-7-600.webp 600w, img/apartament-2-7-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: sypialnia"></button><button type="button" data-lb="img/apartament-2-8-1000.webp" aria-label="Powiększ zdjęcie: łazienka"><img src="img/apartament-2-8-600.webp" srcset="img/apartament-2-8-600.webp 600w, img/apartament-2-8-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: łazienka"></button><button type="button" data-lb="img/apartament-2-14-1000.webp" aria-label="Powiększ zdjęcie: sofa"><img src="img/apartament-2-14-600.webp" srcset="img/apartament-2-14-600.webp 600w, img/apartament-2-14-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: sofa"></button><button type="button" data-lb="img/apartament-2-11-1000.webp" aria-label="Powiększ zdjęcie: sypialnia"><img src="img/apartament-2-11-600.webp" srcset="img/apartament-2-11-600.webp 600w, img/apartament-2-11-1000.webp 1000w" sizes="(max-width:980px) 92vw, 46vw" width="600" height="400" loading="lazy" draggable="false" alt="Apartament #2: sypialnia"></button></div><span class="nr" aria-hidden="true">#2</span></div>
+        <div class="karta-tresc">
+          <svg class="grzbiet" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52 60 47 120 42 170 31 210 35 262 22 300 27 352 18 404 25 462 20 520 29 582 24 642 31 702 26 760 14 800 5 832 12 884 21 942 27 1002 22 1062 31 1122 37 1200 41"/></svg>
+          <h3>Apartament #2 dla 2-4 osób</h3>
+          <p>Na weekend we dwoje albo dla rodziny z dzieckiem. Salon z aneksem kuchennym, sypialnia z łóżkiem dwuosobowym, łazienka, korytarz z dużą szafą i własny taras. Osobne wejście.</p>
+          <ul class="fakty"><li>sypialnia</li><li>łazienka</li><li>salon z aneksem</li><li>do 4 osób</li><li>taras</li></ul>
+          <div class="karta-dol"><span class="cena">od <b>180 zł</b> za dobę</span><a class="btn btn-ciemny" href="#kontakt" data-ap="2">Zapytaj o termin</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="cennik">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Cennik za dobę</h2>
+      <p>Ceny za cały apartament. Sezon: 15 grudnia - 28 lutego, 15 czerwca - 30 września, święta i długie weekendy.</p>
+    </div>
+    <table class="cennik">
+      <thead><tr><th>Apartament</th><th>W sezonie</th><th>Poza sezonem</th><th>Kolejna osoba</th></tr></thead>
+      <tbody>
+        <tr><td class="ap">#1 dla 5-7 osób</td><td data-k="W sezonie (1-5 osób)"><b>350 zł</b><small>1-5 osób</small></td><td data-k="Poza sezonem (1-5 osób)"><b>300 zł</b><small>1-5 osób</small></td><td data-k="Kolejna osoba">50 zł w sezonie, 40 zł poza sezonem<small>maks. 7 osób</small></td></tr>
+        <tr><td class="ap">#2 dla 2-4 osób</td><td data-k="W sezonie (1-2 osoby)"><b>200 zł</b><small>1-2 osoby</small></td><td data-k="Poza sezonem (1-2 osoby)"><b>180 zł</b><small>1-2 osoby</small></td><td data-k="Kolejna osoba">50 zł w sezonie, 40 zł poza sezonem<small>maks. 4 osoby</small></td></tr>
+      </tbody>
+    </table>
+    <div class="cennik-uwagi"><span>Bez opłat rezerwacyjnych</span><span>Bezpłatny parking na posesji</span><span>Małe zwierzęta mile widziane</span></div>
+  </div>
+</section>
+
+<section class="ciemna" id="na-miejscu">
+  <svg class="krawedz" width="1200" height="60" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true" style="background:#fff"><path d="M0 52 60 47 120 42 170 31 210 35 262 22 300 27 352 18 404 25 462 20 520 29 582 24 642 31 702 26 760 14 800 5 832 12 884 21 942 27 1002 22 1062 31 1122 37 1200 41V60H0Z" fill="currentColor"/></svg>
+  <div class="sekcja" style="padding-top:clamp(40px,5vw,72px)">
+    <div class="wrap">
+      <div class="glowa">
+        <h2>Na miejscu i w okolicy</h2>
+        <p>Wszystko, czego potrzeba po dniu w górach: miejsce na rowery i narty, grill, taras i cisza wokół.</p>
+      </div>
+      <div class="udog">
+        <div><b>Prywatny taras</b><span>z krzesłami, stolikiem i widokiem na góry</span></div>
+        <div><b>Parking</b><span>bezpłatny, na posesji</span></div>
+        <div><b>WiFi</b><span>bezpłatne w obu apartamentach</span></div>
+        <div><b>Rowery i narty</b><span>osobne pomieszczenie do przechowywania</span></div>
+        <div><b>Miejsce na grilla</b><span>do dyspozycji gości</span></div>
+        <div><b>Zwierzęta</b><span>akceptujemy małe zwierzęta</span></div>
+        <div><b>Masaż</b><span>na zamówienie, w apartamencie, z fizjoterapeutą</span></div>
+        <div><b>Szklarska Poręba</b><span>5 km do centrum, stoki i szlaki w pobliżu</span></div>
+      </div>
+      <div class="panorama">
+        <img src="img/widok-1200.webp" srcset="img/widok-700.webp 700w, img/widok-1200.webp 1200w, img/widok-2119.webp 2119w" sizes="(max-width:760px) 92vw, min(92vw,1760px)" width="2119" height="490" loading="lazy" alt="Panorama Karkonoszy: kosodrzewina i dolina ze Szklarską Porębą">
+        <p>Karkonosze w zasięgu wzroku</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja" id="opinie">
+  <div class="wrap">
+    <div class="glowa">
+      <h2>Goście o Górzyniance</h2>
+      <div class="tor-nav" id="op-nav"><button type="button" class="strz-t" aria-label="Poprzednie opinie"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button><button type="button" class="strz-t" aria-label="Następne opinie"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button></div>
+    </div>
+    <div class="opinie" id="opinie-tor" data-ciagnij>
+      <figure class="opinia"><blockquote>Wspaniałe miejsce. Apartament duży, przestronny, bardzo dobrze wyposażony. Kuchnia łącznie z ekspresem do kawy i zmywarką. Okolica cicha i spokojna. Pani Halinka lubi ludzi i to widać. Byliśmy drugi raz i znów czuliśmy się jak w domu.</blockquote><cite>Anna O.<span>opinia w Google</span></cite></figure>
+      <figure class="opinia"><blockquote>Super baza wypadowa. Pokoje wyposażone we wszystko co potrzebne, a nawet więcej. Czysto, ciepło i przyjemnie. Właściciele przesympatyczni, uczynni i rodzinni. Już jest plan na następny wyjazd.</blockquote><cite>Jacek Arendt<span>opinia w Google</span></cite></figure>
+      <figure class="opinia"><blockquote>Doskonała baza wypadowa do okolicznych atrakcji, a jest ich tyle, że trudno w dwa tygodnie zobaczyć wszystkie. Pokoje dobrze wyposażone, czyste. Bardzo miła gospodyni, szybko reagująca na ewentualne problemy.</blockquote><cite>Jacek Kasprzyk<span>opinia w Google</span></cite></figure>
+      <figure class="opinia"><blockquote>Kolejny pobyt i kolejny udany wypoczynek. Apartamenty przestronne, świetnie wyposażone. Okolica cicha i spokojna. Doskonała baza na zwiedzanie okolicy.</blockquote><cite>Radosław Szewczyk<span>opinia w Google</span></cite></figure>
+      <figure class="opinia"><blockquote>Bardzo dobre warunki, ekspres do kawy robi robotę, gospodarze dyspozycyjni, komunikacyjni, chce się tu wracać! Plus bardzo dobre miejsce na start do wielu szlaków.</blockquote><cite>Alina Biskupska<span>opinia w Google</span></cite></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja szara" id="kontakt">
+  <div class="wrap kontakt">
+    <div class="dane">
+      <h2>Zapytaj o wolny termin</h2>
+      <p style="margin-top:20px">Rezerwacje przyjmujemy bezpośrednio, telefonicznie albo mailowo.</p>
+      <a class="duzy" href="tel:+48669622871">+48 669 622 871</a>
+      <a class="mail" href="mailto:kontakt@gorzynianka.pl">kontakt@gorzynianka.pl</a>
+      <p style="margin-top:18px">Wrzosowa 6a, 58-573 Piechowice (Górzyniec)</p>
+      <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Apartamenty+G%C3%B3rzynianka,+Wrzosowa+6a,+58-573+Piechowice&amp;output=embed"><span>Mapa dojazdu</span></div>
+    </div>
+    <form id="formularz" novalidate>
+      <h3>Formularz zapytania</h3>
+      <p>Podaj daty i liczbę osób, a gospodarze odpowiedzą, czy termin jest wolny.</p>
+      <div class="pola">
+        <div class="pole"><label for="f-od">Przyjazd</label><input id="f-od" name="od" type="date" required></div>
+        <div class="pole"><label for="f-do">Wyjazd</label><input id="f-do" name="do" type="date" required></div>
+        <div class="pole"><label for="f-ap">Apartament</label><select id="f-ap" name="ap"><option>#1 dla 5-7 osób</option><option>#2 dla 2-4 osób</option><option>Jeszcze nie wiem</option></select></div>
+        <div class="pole"><label for="f-os">Liczba osób</label><input id="f-os" name="os" type="number" min="1" max="7" value="2"></div>
+        <div class="pole pol"><label for="f-im">Imię</label><input id="f-im" name="imie" autocomplete="given-name" required></div>
+        <div class="pole pol"><label for="f-kt">Telefon lub e-mail</label><input id="f-kt" name="kontakt" autocomplete="email" required></div>
+        <div class="pole cale"><label for="f-wi">Wiadomość (opcjonalnie)</label><textarea id="f-wi" name="wiadomosc" placeholder="Np. przyjedziemy z małym psem"></textarea></div>
+      </div>
+      <button class="btn btn-ciemny" type="submit">Wyślij zapytanie</button>
+      <p class="info-form" id="info-form" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <svg class="krawedz" width="1200" height="60" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52 60 47 120 42 170 31 210 35 262 22 300 27 352 18 404 25 462 20 520 29 582 24 642 31 702 26 760 14 800 5 832 12 884 21 942 27 1002 22 1062 31 1122 37 1200 41V60H0Z" fill="currentColor"/></svg>
+  <div class="wrap">
+    <div class="stopka-gora">
+      <div><img src="img/logo-biale.png" width="555" height="90" alt="Górzynianka"><p style="max-width:380px">Apartamenty w Karkonoszach. Górzyniec, Piechowice, 5 km od Szklarskiej Poręby.</p></div>
+      <div><h4>Kontakt</h4><ul><li><a href="tel:+48669622871">+48 669 622 871</a></li><li><a href="mailto:kontakt@gorzynianka.pl">kontakt@gorzynianka.pl</a></li><li>Wrzosowa 6a, 58-573 Piechowice</li></ul></div>
+      <div><h4>Górzynianka</h4><ul><li><a href="#apartamenty">Apartament #1</a></li><li><a href="#apartamenty">Apartament #2</a></li><li><a href="#cennik">Cennik</a></li><li><a href="polityka.html">Polityka prywatności</a></li></ul></div>
+    </div>
+    <div class="stopka-dol"><span>&copy; 2026 Apartamenty Górzynianka</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=gorzynianka.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+
+<div class="pasek" id="pasek" aria-hidden="true">
+  <a class="btn btn-obrys" href="tel:+48669622871" tabindex="-1">Zadzwoń</a>
+  <a class="btn" href="#kontakt" tabindex="-1">Zapytaj o termin</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <img id="lb-img" alt="">
+  <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="2"/></svg></button>
+  <button class="pl" type="button" aria-label="Poprzednie zdjęcie"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <button class="pp" type="button" aria-label="Następne zdjęcie"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <div class="lbl" id="lb-l"></div>
+</div>
+
+<div class="cookies" id="cookies" hidden>
+  <p>Strona używa plików cookies do wyświetlenia mapy Google. <a href="polityka.html">Więcej</a></p>
+  <button type="button" data-zgoda="tak">Akceptuję</button><button type="button" class="drugi" data-zgoda="nie">Tylko niezbędne</button>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
